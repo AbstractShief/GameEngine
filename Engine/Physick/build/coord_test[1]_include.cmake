@@ -1,0 +1,5 @@
+if(EXISTS "/home/abstarct/GameEngine/Engine/Physick/build/coord_test[1]_tests.cmake")
+  include("/home/abstarct/GameEngine/Engine/Physick/build/coord_test[1]_tests.cmake")
+else()
+  add_test(coord_test_NOT_BUILT coord_test_NOT_BUILT)
+endif()

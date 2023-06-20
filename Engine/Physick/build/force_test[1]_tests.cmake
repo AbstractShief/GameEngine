@@ -1,0 +1,7 @@
+add_test( MovementForce.GetModuleTest /home/abstarct/GameEngine/Engine/Physick/bin/force_test [==[--gtest_filter=MovementForce.GetModuleTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MovementForce.GetModuleTest PROPERTIES WORKING_DIRECTORY /home/abstarct/GameEngine/Engine/Physick/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( MovementForce.GetVectorTest /home/abstarct/GameEngine/Engine/Physick/bin/force_test [==[--gtest_filter=MovementForce.GetVectorTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MovementForce.GetVectorTest PROPERTIES WORKING_DIRECTORY /home/abstarct/GameEngine/Engine/Physick/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( MovementForce.SetZero /home/abstarct/GameEngine/Engine/Physick/bin/force_test [==[--gtest_filter=MovementForce.SetZero]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MovementForce.SetZero PROPERTIES WORKING_DIRECTORY /home/abstarct/GameEngine/Engine/Physick/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( force_test_TESTS MovementForce.GetModuleTest MovementForce.GetVectorTest MovementForce.SetZero)

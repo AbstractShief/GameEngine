@@ -1,0 +1,5 @@
+if(EXISTS "/home/abstarct/GameEngine/Engine/Physick/build/force_test[1]_tests.cmake")
+  include("/home/abstarct/GameEngine/Engine/Physick/build/force_test[1]_tests.cmake")
+else()
+  add_test(force_test_NOT_BUILT force_test_NOT_BUILT)
+endif()
