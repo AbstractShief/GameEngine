@@ -33,7 +33,7 @@ void PhysicalObject::UpdateContactVector(Point &point){
 }
 
 PhysicalObject::PhysicalObject(Point *point,double mass_) 
-   : hitbox(point),mass(mass_){}
+   : mass(mass_),hitbox(point){}
 void PhysicalObject::contact(PhysicalObject *initiator){
    Point a=GetVector(),b=initiator->GetVector();
    double vx1,vx2,vy1,vy2;
@@ -55,10 +55,11 @@ void PhysicalObject::clear(){
 void PhysicalObject::update(time_t time){
    for(auto it=forces.begin();it!=forces.end();it++){
       MovementForce *force=it->second;
-      force->update(time);
-      if(force->GetVector()!=0)
-         hitbox->move(force->GetVector());
-      else forces.erase(it);
+      if(force->GetVector()!=0){
+         Point a=force->GetWay(time);
+         hitbox->move(&a);
+         force->update(time);
+      }else forces.erase(it);
    }
 
 }

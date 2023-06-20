@@ -1,8 +1,8 @@
 CMakeFiles/coord_test.dir/src/force/Force.cpp.o: \
- /home/abstarct/GameEngine/Engine/Physick/src/force/Force.cpp \
+ /home/debial/GameEngine/Engine/Physick/src/force/Force.cpp \
  /usr/include/stdc-predef.h \
- /home/abstarct/GameEngine/Engine/Physick/src/force/Force.h \
- /home/abstarct/GameEngine/Engine/Physick/src/force/../coordinate/coord.h \
+ /home/debial/GameEngine/Engine/Physick/src/force/Force.h \
+ /home/debial/GameEngine/Engine/Physick/src/force/../coordinate/coord.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

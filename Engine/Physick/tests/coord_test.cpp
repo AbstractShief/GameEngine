@@ -10,7 +10,7 @@ TEST(PointTest, GetTest) {
    point.get_pos(&x, &y);
    EXPECT_EQ(x, x_b); 
    EXPECT_EQ(y, y_b);
-   EXPECT_EQ(point.x+5, x_b);
+   EXPECT_EQ(point.get_x(), x_b);
    EXPECT_EQ(point.get_y(), y_b);
 }
 TEST(PointTest, SetTest) {

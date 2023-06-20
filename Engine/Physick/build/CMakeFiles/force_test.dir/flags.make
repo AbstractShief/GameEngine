@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/abstarct/GameEngine/Engine/Physick/build/_deps/googletest-src/googletest/include -isystem /home/abstarct/GameEngine/Engine/Physick/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -isystem /home/debial/GameEngine/Engine/Physick/build/_deps/googletest-src/googletest/include -isystem /home/debial/GameEngine/Engine/Physick/build/_deps/googletest-src/googletest
 
 CXX_FLAGS = -DDEBUG=1 -std=gnu++14
 

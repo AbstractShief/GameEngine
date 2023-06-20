@@ -30,9 +30,9 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 
-file(GLOB_RECURSE VARIABLE src/coordinate/*.cpp src/exception/*.cpp src/force/*.cpp)
+file(GLOB_RECURSE VARIABLE src/coordinate/*.cpp src/exception/*.cpp src/force/*.cpp src/object/*.cpp)
 #compilation
-set(ARGS -Wall -g -lm)
+set(ARGS -Wall -g -lm -DDEBUG=1)
 add_executable(MyProject main.cpp ${VARIABLE})
 target_compile_options(MyProject PRIVATE ${ARGS})
 #testin#
@@ -56,3 +56,13 @@ target_link_libraries(
 target_compile_options(force_test PRIVATE -DDEBUG=1)
 include(GoogleTest)
 gtest_discover_tests(force_test)
+add_executable(
+   object_test tests/object_test.cpp ${VARIABLE}
+)
+target_link_libraries(
+   object_test
+   GTest::gtest_main
+)
+target_compile_options(object_test PRIVATE -DDEBUG=1)
+include(GoogleTest)
+gtest_discover_tests(object_test)

@@ -5,6 +5,9 @@
 
 
 MovementForce::MovementForce(Point &velocity): V(velocity){}
+Point MovementForce::GetWay(time_t time)const{
+   return Point(V.get_x()*time,V.get_y()*time);
+}
 const Point *MovementForce::GetVector()const{
    return &V;
 }
@@ -13,7 +16,8 @@ double MovementForce::GetModule()const{
    V.get_pos(&x, &y);
    return sqrt(x*x+y*y);
 }
-void MovementForce::update(time_t){}
 void MovementForce::set_zero(){
    V={0,0};
 }
+void MovementForce::update(time_t time){}
+MovementForce::~MovementForce(){}

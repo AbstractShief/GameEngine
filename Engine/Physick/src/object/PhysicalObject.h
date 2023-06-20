@@ -1,4 +1,4 @@
-/*File "PhysicalObject.h" create by debial, (Сб 17 июн 2023 13:10:38)*/
+/*File "PhysicalObject.cpp" create by debial, (Сб 17 июн 2023 13:10:38)*/
 #ifndef DEBIAL_PHYSICALOBJECT_H_SENTURY
 #define DEBIAL_PHYSICALOBJECT_H_SENTURY
 #include "../coordinate/coord.h"

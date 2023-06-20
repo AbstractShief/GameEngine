@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abstarct/GameEngine/Engine/Physick
+CMAKE_SOURCE_DIR = /home/debial/GameEngine/Engine/Physick
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abstarct/GameEngine/Engine/Physick/build
+CMAKE_BINARY_DIR = /home/debial/GameEngine/Engine/Physick/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abstarct/GameEngine/Engine/Physick/build/CMakeFiles /home/abstarct/GameEngine/Engine/Physick/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/debial/GameEngine/Engine/Physick/build/CMakeFiles /home/debial/GameEngine/Engine/Physick/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abstarct/GameEngine/Engine/Physick/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/debial/GameEngine/Engine/Physick/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -209,6 +209,19 @@ force_test: cmake_check_build_system
 force_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/build
 .PHONY : force_test/fast
+
+#=============================================================================
+# Target rules for targets named object_test
+
+# Build rule for target.
+object_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_test
+.PHONY : object_test
+
+# fast build rule for target.
+object_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/build
+.PHONY : object_test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -294,6 +307,7 @@ src/coordinate/coord.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/coordinate/coord.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/coordinate/coord.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/coordinate/coord.cpp.o
 .PHONY : src/coordinate/coord.cpp.o
 
 src/coordinate/coord.i: src/coordinate/coord.cpp.i
@@ -304,6 +318,7 @@ src/coordinate/coord.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/coordinate/coord.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/coordinate/coord.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/coordinate/coord.cpp.i
 .PHONY : src/coordinate/coord.cpp.i
 
 src/coordinate/coord.s: src/coordinate/coord.cpp.s
@@ -314,6 +329,7 @@ src/coordinate/coord.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/coordinate/coord.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/coordinate/coord.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/coordinate/coord.cpp.s
 .PHONY : src/coordinate/coord.cpp.s
 
 src/exception/PhysickException.o: src/exception/PhysickException.cpp.o
@@ -324,6 +340,7 @@ src/exception/PhysickException.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/exception/PhysickException.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/exception/PhysickException.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/exception/PhysickException.cpp.o
 .PHONY : src/exception/PhysickException.cpp.o
 
 src/exception/PhysickException.i: src/exception/PhysickException.cpp.i
@@ -334,6 +351,7 @@ src/exception/PhysickException.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/exception/PhysickException.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/exception/PhysickException.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/exception/PhysickException.cpp.i
 .PHONY : src/exception/PhysickException.cpp.i
 
 src/exception/PhysickException.s: src/exception/PhysickException.cpp.s
@@ -344,6 +362,7 @@ src/exception/PhysickException.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/exception/PhysickException.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/exception/PhysickException.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/exception/PhysickException.cpp.s
 .PHONY : src/exception/PhysickException.cpp.s
 
 src/force/Force.o: src/force/Force.cpp.o
@@ -354,6 +373,7 @@ src/force/Force.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/force/Force.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/force/Force.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/force/Force.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/force/Force.cpp.o
 .PHONY : src/force/Force.cpp.o
 
 src/force/Force.i: src/force/Force.cpp.i
@@ -364,6 +384,7 @@ src/force/Force.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/force/Force.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/force/Force.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/force/Force.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/force/Force.cpp.i
 .PHONY : src/force/Force.cpp.i
 
 src/force/Force.s: src/force/Force.cpp.s
@@ -374,7 +395,74 @@ src/force/Force.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/force/Force.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/force/Force.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/force/Force.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/force/Force.cpp.s
 .PHONY : src/force/Force.cpp.s
+
+src/force/MyForce.o: src/force/MyForce.cpp.o
+.PHONY : src/force/MyForce.o
+
+# target to build an object file
+src/force/MyForce.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/force/MyForce.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/force/MyForce.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/force/MyForce.cpp.o
+.PHONY : src/force/MyForce.cpp.o
+
+src/force/MyForce.i: src/force/MyForce.cpp.i
+.PHONY : src/force/MyForce.i
+
+# target to preprocess a source file
+src/force/MyForce.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/force/MyForce.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/force/MyForce.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/force/MyForce.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/force/MyForce.cpp.i
+.PHONY : src/force/MyForce.cpp.i
+
+src/force/MyForce.s: src/force/MyForce.cpp.s
+.PHONY : src/force/MyForce.s
+
+# target to generate assembly for a file
+src/force/MyForce.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/force/MyForce.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/force/MyForce.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/force/MyForce.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/force/MyForce.cpp.s
+.PHONY : src/force/MyForce.cpp.s
+
+src/object/PhysicalObject.o: src/object/PhysicalObject.cpp.o
+.PHONY : src/object/PhysicalObject.o
+
+# target to build an object file
+src/object/PhysicalObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/object/PhysicalObject.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/object/PhysicalObject.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/object/PhysicalObject.cpp.o
+.PHONY : src/object/PhysicalObject.cpp.o
+
+src/object/PhysicalObject.i: src/object/PhysicalObject.cpp.i
+.PHONY : src/object/PhysicalObject.i
+
+# target to preprocess a source file
+src/object/PhysicalObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/object/PhysicalObject.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/object/PhysicalObject.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/object/PhysicalObject.cpp.i
+.PHONY : src/object/PhysicalObject.cpp.i
+
+src/object/PhysicalObject.s: src/object/PhysicalObject.cpp.s
+.PHONY : src/object/PhysicalObject.s
+
+# target to generate assembly for a file
+src/object/PhysicalObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/object/PhysicalObject.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/object/PhysicalObject.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/object/PhysicalObject.cpp.s
+.PHONY : src/object/PhysicalObject.cpp.s
 
 tests/coord_test.o: tests/coord_test.cpp.o
 .PHONY : tests/coord_test.o
@@ -424,6 +512,30 @@ tests/force_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/tests/force_test.cpp.s
 .PHONY : tests/force_test.cpp.s
 
+tests/object_test.o: tests/object_test.cpp.o
+.PHONY : tests/object_test.o
+
+# target to build an object file
+tests/object_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/tests/object_test.cpp.o
+.PHONY : tests/object_test.cpp.o
+
+tests/object_test.i: tests/object_test.cpp.i
+.PHONY : tests/object_test.i
+
+# target to preprocess a source file
+tests/object_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/tests/object_test.cpp.i
+.PHONY : tests/object_test.cpp.i
+
+tests/object_test.s: tests/object_test.cpp.s
+.PHONY : tests/object_test.s
+
+# target to generate assembly for a file
+tests/object_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/tests/object_test.cpp.s
+.PHONY : tests/object_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -444,6 +556,7 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... object_test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -456,12 +569,21 @@ help:
 	@echo "... src/force/Force.o"
 	@echo "... src/force/Force.i"
 	@echo "... src/force/Force.s"
+	@echo "... src/force/MyForce.o"
+	@echo "... src/force/MyForce.i"
+	@echo "... src/force/MyForce.s"
+	@echo "... src/object/PhysicalObject.o"
+	@echo "... src/object/PhysicalObject.i"
+	@echo "... src/object/PhysicalObject.s"
 	@echo "... tests/coord_test.o"
 	@echo "... tests/coord_test.i"
 	@echo "... tests/coord_test.s"
 	@echo "... tests/force_test.o"
 	@echo "... tests/force_test.i"
 	@echo "... tests/force_test.s"
+	@echo "... tests/object_test.o"
+	@echo "... tests/object_test.i"
+	@echo "... tests/object_test.s"
 .PHONY : help
 
 

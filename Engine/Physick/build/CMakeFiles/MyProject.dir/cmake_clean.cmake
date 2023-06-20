@@ -9,6 +9,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o.d"
   "CMakeFiles/MyProject.dir/src/force/Force.cpp.o"
   "CMakeFiles/MyProject.dir/src/force/Force.cpp.o.d"
+  "CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o"
+  "CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o.d"
+  "CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o"
+  "CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -Wall -g -lm -std=gnu++14
+CXX_FLAGS = -Wall -g -lm -DDEBUG=1 -std=gnu++14
 
