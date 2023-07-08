@@ -13,6 +13,9 @@ void Point::set(double x_,double y_){
    x=x_;
    y=y_;
 }
+Point* Point::copy()const{
+   return new Point(*this);
+}
 void Point::set(const Point *coord){
    coord->get_pos(&x,&y);
 }
@@ -28,6 +31,9 @@ void Point::move(const Point *coord){
 bool Point::Collision(const Point *)const{
    return false;
 }
+void Point::resize(double xd,double yd){
+   x*=xd;y*=yd;
+}
 HitBox::HitBox(Point point,double w,double h) 
    : Point(point),W(w),H(h){}
 void HitBox::get_size(double *w,double *h)const{
@@ -39,6 +45,13 @@ bool HitBox::Collision(const Point *point) const{
    point->get_pos(&x_o,&y_o);
    if(x_o>=x && x_o<=x+W && y_o>=y && y_o<=y+H) return true;
    return false;
+}
+Point* HitBox::copy()const{
+   return new HitBox(*this);
+}
+void HitBox::resize(double xd,double yd){
+   Point::resize(xd, yd);
+   W*=xd;H*=yd;
 }
 CompositeHitBox::CompositeHitBox(Point point,double w,double h) :
    HitBox(point,w,h){}
@@ -53,6 +66,9 @@ bool CompositeHitBox::Collision(const Point *coord) const{
       it->second->move(-x,-y);
    }
    return false;
+}
+Point* CompositeHitBox::copy()const{
+   return new CompositeHitBox(*this);
 }
 void CompositeHitBox::add(HitBox *hitbox,int id){
    double w_n,h_n;
@@ -72,4 +88,9 @@ void CompositeHitBox::del(int id){
 }
 int CompositeHitBox::count()const{
    return blocks.size();
+}
+void CompositeHitBox::resize(double xd,double yd){
+   HitBox::resize(xd,yd);
+   for(auto it=blocks.begin();it!=blocks.end();it++)
+      it->second->resize(xd,yd);
 }

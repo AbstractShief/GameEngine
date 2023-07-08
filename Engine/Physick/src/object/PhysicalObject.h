@@ -7,20 +7,22 @@ class PhysicalObject{
 #ifdef DEBUG
    public:
 #endif
+   bool physick;
    double mass;
-   Point *hitbox;
+   HitBox *hitbox;
    std::unordered_map<int,MovementForce*> forces;
    void SetZero();
    Point GetVector()const;
    void UpdateContactVector(Point &Point);
    public:
-   PhysicalObject(Point *point,double mass);
+   PhysicalObject(HitBox *hitbox,double mass,bool physick=true);
    void contact(PhysicalObject *initiator);
    void clear();
    void update(time_t time);
    void moveTo(Point *coord);
    void add_force(int id,MovementForce *force);
    void del_force(int id);
+   operator const HitBox*();
 
 };
 

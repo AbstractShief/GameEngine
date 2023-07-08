@@ -32,8 +32,8 @@ void PhysicalObject::UpdateContactVector(Point &point){
    forces.insert(std::make_pair(0,new MovementForce(point)));
 }
 
-PhysicalObject::PhysicalObject(Point *point,double mass_) 
-   : mass(mass_),hitbox(point){}
+PhysicalObject::PhysicalObject(HitBox *hitbox_,double mass_,bool physick_) 
+   : physick(physick_),mass(mass_),hitbox(hitbox_){}
 void PhysicalObject::contact(PhysicalObject *initiator){
    Point a=GetVector(),b=initiator->GetVector();
    double vx1,vx2,vy1,vy2;
@@ -72,4 +72,7 @@ void PhysicalObject::add_force(int id,MovementForce *force){//0 это заре�
 }
 void PhysicalObject::del_force(int id){
    forces.erase(id);
+}
+PhysicalObject::operator const HitBox*(){
+   return hitbox;
 }

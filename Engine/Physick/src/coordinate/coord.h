@@ -21,6 +21,8 @@ class Point{
    void move(double x,double y);
    void move(const Point *coord);
    virtual bool Collision(const Point *)const;//always return false; null HitBox Object
+   virtual Point* copy()const;//не глубокие копии
+   virtual void resize(double xd,double yd);
 };
 //          W
 //      *------*
@@ -34,14 +36,18 @@ class HitBox : public Point{
    public:
    HitBox(Point point,double w,double h);
    void get_size(double *w,double *h)const;
-   virtual bool Collision(const Point *) const;//if point in Rect return true
+   virtual bool Collision(const Point *) const override;//if point in Rect return true
+   virtual Point* copy()const override;
+   virtual void resize(double xd,double yd) override;
 };
 //add: внутрение хит боксы должны вмещатся во внешний в ином случае будет вызванно исключение
 class CompositeHitBox : public HitBox{
    std::unordered_map<int,HitBox*> blocks;
    public:
    CompositeHitBox(Point point,double w,double h);
-   bool Collision(const Point *coord) const;
+   bool Collision(const Point *coord) const override;
+   virtual void resize(double xd,double yd) override;
+   virtual Point* copy()const override;
    int count()const;
    void add(HitBox *hitbox,int id);
    void del(int id);
