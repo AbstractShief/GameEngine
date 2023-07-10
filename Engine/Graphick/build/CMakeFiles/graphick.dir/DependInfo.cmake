@@ -17,7 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/debial/GameEngine/Engine/Graphick/src/exception/GraphickException.cpp" "CMakeFiles/graphick.dir/src/exception/GraphickException.cpp.o" "gcc" "CMakeFiles/graphick.dir/src/exception/GraphickException.cpp.o.d"
   "/home/debial/GameEngine/Engine/Graphick/src/object/geometry/geometry.cpp" "CMakeFiles/graphick.dir/src/object/geometry/geometry.cpp.o" "gcc" "CMakeFiles/graphick.dir/src/object/geometry/geometry.cpp.o.d"
   "/home/debial/GameEngine/Engine/Graphick/src/object/image/image.cpp" "CMakeFiles/graphick.dir/src/object/image/image.cpp.o" "gcc" "CMakeFiles/graphick.dir/src/object/image/image.cpp.o.d"
-  "/home/debial/GameEngine/Engine/Graphick/src/object/interface/GraphickObject.cpp" "CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o" "gcc" "CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o.d"
+  "/home/debial/GameEngine/Engine/Graphick/src/object/interface/texture.cpp" "CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o" "gcc" "CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o.d"
   )
 
 # Targets to which this target links.

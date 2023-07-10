@@ -1,4 +1,4 @@
-/*File "GraphickObject.h" create by debial, (Пт 07 июл 2023 16:40:49)*/
+/*File "texture.cpp" create by debial, (Пт 07 июл 2023 16:40:49)*/
 #ifndef DEBIAL_GRAPHICKOBJECT_H_SENTURY
 #define DEBIAL_GRAPHICKOBJECT_H_SENTURY
 
@@ -7,25 +7,36 @@
 #include <SDL2/SDL_rect.h>
 #include <SDL2/SDL_render.h>
 #include <vector>
-class GraphickObject{
+class Texture{
 public:
    static SDL_Window* Window;
    static SDL_Renderer* Renderer;
-protected:
-   SDL_Texture* texture;
    coord rpoint;
    double angle;
    SDL_RendererFlip flip;
+protected:
+   SDL_Texture *texture;
+   virtual void my_init();
+   virtual void init();
 public:
-   GraphickObject();
-   int graphick(SDL_Rect *to,SDL_Rect *from=NULL);
+   Texture(coord size);
+
+   SDL_RendererFlip get_flip();
+   double get_angle();
+   SDL_Texture* get_texture();
 
    void set_flip(SDL_RendererFlip flip);
    void set_rpoint(coord point);
    bool rotate(double angle);
    bool rotate_to(double angle);
-   double get_angle()const;
-   virtual bool is_rotated()const=0;
+   virtual bool is_rotated()const;
+};
+struct Color{
+   unsigned char r,g,b,a;
+   Color(unsigned char r,unsigned char g,unsigned char b,unsigned char a);
+   void set(){
+      SDL_SetRenderDrawColor(Texture::Renderer,r,g,b,a);
+   }
 };
 
 #endif

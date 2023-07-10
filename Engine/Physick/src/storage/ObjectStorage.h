@@ -2,7 +2,13 @@
 #ifndef DEBIAL_OBJECTSTORAGE_H_SENTURY
 #define DEBIAL_OBJECTSTORAGE_H_SENTURY
 #include <vector>
+#include "../coordinate/coord.h"
+struct Block{
+   int x,y;
 
+};
+class OBjectStorage{
 
+};
 
 #endif

@@ -19,8 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/graphick.dir/src/object/geometry/geometry.cpp.o.d"
   "CMakeFiles/graphick.dir/src/object/image/image.cpp.o"
   "CMakeFiles/graphick.dir/src/object/image/image.cpp.o.d"
-  "CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o"
-  "CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o.d"
+  "CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o"
+  "CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

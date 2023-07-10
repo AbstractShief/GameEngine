@@ -2,7 +2,7 @@ CMakeFiles/graphick.dir/src/object/geometry/geometry.cpp.o: \
  /home/debial/GameEngine/Engine/Graphick/src/object/geometry/geometry.cpp \
  /usr/include/stdc-predef.h \
  /home/debial/GameEngine/Engine/Graphick/src/object/geometry/geometry.h \
- /home/debial/GameEngine/Engine/Graphick/src/object/geometry/../interface/GraphickObject.h \
+ /home/debial/GameEngine/Engine/Graphick/src/object/geometry/../interface/texture.h \
  /home/debial/GameEngine/Engine/Graphick/src/object/geometry/../interface/../../../../Physick/src/coordinate/coord.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -237,6 +237,7 @@ CMakeFiles/graphick.dir/src/object/geometry/geometry.cpp.o: \
  /usr/local/include/SDL2/SDL_system.h /usr/local/include/SDL2/SDL_timer.h \
  /usr/local/include/SDL2/SDL_version.h \
  /usr/local/include/SDL2/SDL_locale.h /usr/local/include/SDL2/SDL_misc.h \
+ /usr/local/include/SDL2/SDL_rect.h /usr/local/include/SDL2/SDL_render.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \

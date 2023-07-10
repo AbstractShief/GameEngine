@@ -195,19 +195,19 @@ CMakeFiles/graphick.dir/src/object/image/image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphick.dir/src/object/image/image.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/debial/GameEngine/Engine/Graphick/src/object/image/image.cpp -o CMakeFiles/graphick.dir/src/object/image/image.cpp.s
 
-CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o: CMakeFiles/graphick.dir/flags.make
-CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o: ../src/object/interface/GraphickObject.cpp
-CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o: CMakeFiles/graphick.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Graphick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o -MF CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o.d -o CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o -c /home/debial/GameEngine/Engine/Graphick/src/object/interface/GraphickObject.cpp
+CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o: CMakeFiles/graphick.dir/flags.make
+CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o: ../src/object/interface/texture.cpp
+CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o: CMakeFiles/graphick.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Graphick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o -MF CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o.d -o CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o -c /home/debial/GameEngine/Engine/Graphick/src/object/interface/texture.cpp
 
-CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/debial/GameEngine/Engine/Graphick/src/object/interface/GraphickObject.cpp > CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.i
+CMakeFiles/graphick.dir/src/object/interface/texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphick.dir/src/object/interface/texture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/debial/GameEngine/Engine/Graphick/src/object/interface/texture.cpp > CMakeFiles/graphick.dir/src/object/interface/texture.cpp.i
 
-CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/debial/GameEngine/Engine/Graphick/src/object/interface/GraphickObject.cpp -o CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.s
+CMakeFiles/graphick.dir/src/object/interface/texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphick.dir/src/object/interface/texture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/debial/GameEngine/Engine/Graphick/src/object/interface/texture.cpp -o CMakeFiles/graphick.dir/src/object/interface/texture.cpp.s
 
 # Object files for target graphick
 graphick_OBJECTS = \
@@ -220,7 +220,7 @@ graphick_OBJECTS = \
 "CMakeFiles/graphick.dir/src/exception/GraphickException.cpp.o" \
 "CMakeFiles/graphick.dir/src/object/geometry/geometry.cpp.o" \
 "CMakeFiles/graphick.dir/src/object/image/image.cpp.o" \
-"CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o"
+"CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o"
 
 # External object files for target graphick
 graphick_EXTERNAL_OBJECTS =
@@ -234,7 +234,7 @@ graphick_EXTERNAL_OBJECTS =
 ../bin/graphick: CMakeFiles/graphick.dir/src/exception/GraphickException.cpp.o
 ../bin/graphick: CMakeFiles/graphick.dir/src/object/geometry/geometry.cpp.o
 ../bin/graphick: CMakeFiles/graphick.dir/src/object/image/image.cpp.o
-../bin/graphick: CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o
+../bin/graphick: CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o
 ../bin/graphick: CMakeFiles/graphick.dir/build.make
 ../bin/graphick: /usr/local/lib/libSDL2.so
 ../bin/graphick: CMakeFiles/graphick.dir/link.txt

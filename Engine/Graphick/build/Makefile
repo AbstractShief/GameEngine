@@ -345,29 +345,29 @@ src/object/image/image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/image/image.cpp.s
 .PHONY : src/object/image/image.cpp.s
 
-src/object/interface/GraphickObject.o: src/object/interface/GraphickObject.cpp.o
-.PHONY : src/object/interface/GraphickObject.o
+src/object/interface/texture.o: src/object/interface/texture.cpp.o
+.PHONY : src/object/interface/texture.o
 
 # target to build an object file
-src/object/interface/GraphickObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o
-.PHONY : src/object/interface/GraphickObject.cpp.o
+src/object/interface/texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/interface/texture.cpp.o
+.PHONY : src/object/interface/texture.cpp.o
 
-src/object/interface/GraphickObject.i: src/object/interface/GraphickObject.cpp.i
-.PHONY : src/object/interface/GraphickObject.i
+src/object/interface/texture.i: src/object/interface/texture.cpp.i
+.PHONY : src/object/interface/texture.i
 
 # target to preprocess a source file
-src/object/interface/GraphickObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.i
-.PHONY : src/object/interface/GraphickObject.cpp.i
+src/object/interface/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/interface/texture.cpp.i
+.PHONY : src/object/interface/texture.cpp.i
 
-src/object/interface/GraphickObject.s: src/object/interface/GraphickObject.cpp.s
-.PHONY : src/object/interface/GraphickObject.s
+src/object/interface/texture.s: src/object/interface/texture.cpp.s
+.PHONY : src/object/interface/texture.s
 
 # target to generate assembly for a file
-src/object/interface/GraphickObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.s
-.PHONY : src/object/interface/GraphickObject.cpp.s
+src/object/interface/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/interface/texture.cpp.s
+.PHONY : src/object/interface/texture.cpp.s
 
 # Help Target
 help:
@@ -405,9 +405,9 @@ help:
 	@echo "... src/object/image/image.o"
 	@echo "... src/object/image/image.i"
 	@echo "... src/object/image/image.s"
-	@echo "... src/object/interface/GraphickObject.o"
-	@echo "... src/object/interface/GraphickObject.i"
-	@echo "... src/object/interface/GraphickObject.s"
+	@echo "... src/object/interface/texture.o"
+	@echo "... src/object/interface/texture.i"
+	@echo "... src/object/interface/texture.s"
 .PHONY : help
 
 

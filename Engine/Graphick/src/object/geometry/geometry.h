@@ -2,36 +2,43 @@
 #ifndef DEBIAL_GEOMETRY_H_SENTURY
 #define DEBIAL_GEOMETRY_H_SENTURY
 
-#include "../interface/GraphickObject.h"
-class Rectangle : public GraphickObject{
-   coord size_base;
+#include "../interface/texture.h"
+class Rectangle : public Texture{
    protected:
    coord size;
-   virtual void MyResize(double xd,double yd) override;
-   virtual bool render() const override;
+   Color color;
+   virtual void my_init() override;
    public:
    virtual bool is_rotated()const override{return true;}
-   Rectangle(Point* hitbox,coord offset,coord size);
+   Rectangle(coord size,Color color);
+};
+class RectangleFill : public Rectangle{
+   void my_init() override;
+   public:
+   virtual bool is_rotated()const override{return true;}
+   RectangleFill(coord size,Color color);
 };
 
 class Square : public Rectangle{
    public:
-   Square(Point* hitbox,coord offset,int a);
+   Square(int a,Color color);
 };
-class CircleFill : public GraphickObject{
-   int R_base;
+class SquareFill : public RectangleFill{
+   public:
+   SquareFill(int a,Color color);
+};
+class Circle : public Texture{
    protected:
+   Color color;
    int R;
-   virtual void MyResize(double xd,double yd) override;
-   virtual bool render() const override;
-   public:
    virtual bool is_rotated()const override{return false;}
-   CircleFill(Point *hitbox,coord offset,int R);
-};
-class Circle : public CircleFill{
-   protected:
-   virtual bool render() const override;
+   virtual void my_init() override;
    public:
-   Circle(Point *hitbox,coord offset,int R);
+   Circle(int R,Color color);
+};
+class CircleFill : public Circle{
+   virtual void my_init() override;
+   public:
+   CircleFill(int R,Color color);
 };
 #endif
