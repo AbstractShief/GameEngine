@@ -12,5 +12,11 @@ class InitException : public GraphickException{
    InitException(const char *str);
    virtual const char* what()const noexcept override;
 };
+class OpenException : public GraphickException{
+   const char *str;
+   public:
+   OpenException(const char *str);
+   virtual const char* what()const noexcept override;
+};
 
 #endif

@@ -4,24 +4,28 @@
 
 #include "../../../../Physick/src/coordinate/coord.h"
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_rect.h>
+#include <SDL2/SDL_render.h>
 #include <vector>
 class GraphickObject{
-   protected:
-   GraphickObject* parent;
-   std::vector<GraphickObject*> child;
-   Point *hitbox;
-   Point *hitbox_r;
-   bool GraphickChild();
-   public:
+public:
    static SDL_Window* Window;
    static SDL_Renderer* Renderer;
-   GraphickObject(Point *hitbox);
-   ~GraphickObject();
-   virtual bool graphick()const=0;
-   void resize(double xd,double yd);
-   void Add(GraphickObject *obj);
-   void Remove(GraphickObject *obj);
-   GraphickObject *GetChild(int i) const;
+protected:
+   SDL_Texture* texture;
+   coord rpoint;
+   double angle;
+   SDL_RendererFlip flip;
+public:
+   GraphickObject();
+   int graphick(SDL_Rect *to,SDL_Rect *from=NULL);
+
+   void set_flip(SDL_RendererFlip flip);
+   void set_rpoint(coord point);
+   bool rotate(double angle);
+   bool rotate_to(double angle);
+   double get_angle()const;
+   virtual bool is_rotated()const=0;
 };
 
 #endif

@@ -9,3 +9,9 @@ const char* InitException::what()const noexcept{
    printf("+Init Error: %s",str);
    return "InitException";
 }
+OpenException::OpenException(const char *str_) :str(str_){}
+const char* OpenException::what()const noexcept{
+   GraphickException::what();
+   printf("+Open Error: %s",str);
+   return "OpenException";
+}

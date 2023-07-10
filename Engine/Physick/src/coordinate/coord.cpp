@@ -1,11 +1,15 @@
 /*File "coord.cpp" create by debial, (Сб 17 июн 2023 10:59:40)*/
 #include "coord.h"
 #include "../exception/PhysickException.h"
+coord::coord(double x_,double y_) : x(x_),y(y_){}
 Point::Point(double x_,double y_)
    : x(x_),y(y_){}
 void Point::get_pos(double *x_,double *y_) const{
    *x_=x;
    *y_=y;
+}
+Point::operator coord(){
+   return coord(x,y);
 }
 double Point::get_x()const{return x;}
 double Point::get_y()const{return y;}
@@ -39,6 +43,9 @@ HitBox::HitBox(Point point,double w,double h)
 void HitBox::get_size(double *w,double *h)const{
    *w=W;
    *h=H;
+}
+coord HitBox::get_size()const{
+   return coord(W,H);
 }
 bool HitBox::Collision(const Point *point) const{
    double x_o,y_o;

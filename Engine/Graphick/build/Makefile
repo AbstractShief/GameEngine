@@ -57,23 +57,13 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/debial/GameEngine/Engine/Physick
+CMAKE_SOURCE_DIR = /home/debial/GameEngine/Engine/Graphick
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/debial/GameEngine/Engine/Physick/build
+CMAKE_BINARY_DIR = /home/debial/GameEngine/Engine/Graphick/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -95,56 +85,11 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/debial/GameEngine/Engine/Physick/build/CMakeFiles /home/debial/GameEngine/Engine/Physick/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/debial/GameEngine/Engine/Graphick/build/CMakeFiles /home/debial/GameEngine/Engine/Graphick/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/debial/GameEngine/Engine/Physick/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/debial/GameEngine/Engine/Graphick/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -172,115 +117,144 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyProject
+# Target rules for targets named graphick
 
 # Build rule for target.
-MyProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyProject
-.PHONY : MyProject
+graphick: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graphick
+.PHONY : graphick
 
 # fast build rule for target.
-MyProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
-.PHONY : MyProject/fast
+graphick/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/build
+.PHONY : graphick/fast
 
-#=============================================================================
-# Target rules for targets named coord_test
+home/debial/GameEngine/Engine/Physick/src/coordinate/coord.o: home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp.o
+.PHONY : home/debial/GameEngine/Engine/Physick/src/coordinate/coord.o
 
-# Build rule for target.
-coord_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 coord_test
-.PHONY : coord_test
+# target to build an object file
+home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp.o
+.PHONY : home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp.o
 
-# fast build rule for target.
-coord_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/build
-.PHONY : coord_test/fast
+home/debial/GameEngine/Engine/Physick/src/coordinate/coord.i: home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp.i
+.PHONY : home/debial/GameEngine/Engine/Physick/src/coordinate/coord.i
 
-#=============================================================================
-# Target rules for targets named force_test
+# target to preprocess a source file
+home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp.i
+.PHONY : home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp.i
 
-# Build rule for target.
-force_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 force_test
-.PHONY : force_test
+home/debial/GameEngine/Engine/Physick/src/coordinate/coord.s: home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp.s
+.PHONY : home/debial/GameEngine/Engine/Physick/src/coordinate/coord.s
 
-# fast build rule for target.
-force_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/build
-.PHONY : force_test/fast
+# target to generate assembly for a file
+home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp.s
+.PHONY : home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp.s
 
-#=============================================================================
-# Target rules for targets named object_test
+home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.o: home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp.o
+.PHONY : home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.o
 
-# Build rule for target.
-object_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 object_test
-.PHONY : object_test
+# target to build an object file
+home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp.o
+.PHONY : home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp.o
 
-# fast build rule for target.
-object_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/build
-.PHONY : object_test/fast
+home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.i: home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp.i
+.PHONY : home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.i
 
-#=============================================================================
-# Target rules for targets named gmock
+# target to preprocess a source file
+home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp.i
+.PHONY : home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp.i
 
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
-.PHONY : gmock
+home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.s: home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp.s
+.PHONY : home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.s
 
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
+# target to generate assembly for a file
+home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp.s
+.PHONY : home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp.s
 
-#=============================================================================
-# Target rules for targets named gmock_main
+home/debial/GameEngine/Engine/Physick/src/force/Force.o: home/debial/GameEngine/Engine/Physick/src/force/Force.cpp.o
+.PHONY : home/debial/GameEngine/Engine/Physick/src/force/Force.o
 
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
-.PHONY : gmock_main
+# target to build an object file
+home/debial/GameEngine/Engine/Physick/src/force/Force.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/force/Force.cpp.o
+.PHONY : home/debial/GameEngine/Engine/Physick/src/force/Force.cpp.o
 
-# fast build rule for target.
-gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
+home/debial/GameEngine/Engine/Physick/src/force/Force.i: home/debial/GameEngine/Engine/Physick/src/force/Force.cpp.i
+.PHONY : home/debial/GameEngine/Engine/Physick/src/force/Force.i
 
-#=============================================================================
-# Target rules for targets named gtest
+# target to preprocess a source file
+home/debial/GameEngine/Engine/Physick/src/force/Force.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/force/Force.cpp.i
+.PHONY : home/debial/GameEngine/Engine/Physick/src/force/Force.cpp.i
 
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
+home/debial/GameEngine/Engine/Physick/src/force/Force.s: home/debial/GameEngine/Engine/Physick/src/force/Force.cpp.s
+.PHONY : home/debial/GameEngine/Engine/Physick/src/force/Force.s
 
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
+# target to generate assembly for a file
+home/debial/GameEngine/Engine/Physick/src/force/Force.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/force/Force.cpp.s
+.PHONY : home/debial/GameEngine/Engine/Physick/src/force/Force.cpp.s
 
-#=============================================================================
-# Target rules for targets named gtest_main
+home/debial/GameEngine/Engine/Physick/src/force/MyForce.o: home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp.o
+.PHONY : home/debial/GameEngine/Engine/Physick/src/force/MyForce.o
 
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
+# target to build an object file
+home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp.o
+.PHONY : home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp.o
 
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
+home/debial/GameEngine/Engine/Physick/src/force/MyForce.i: home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp.i
+.PHONY : home/debial/GameEngine/Engine/Physick/src/force/MyForce.i
+
+# target to preprocess a source file
+home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp.i
+.PHONY : home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp.i
+
+home/debial/GameEngine/Engine/Physick/src/force/MyForce.s: home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp.s
+.PHONY : home/debial/GameEngine/Engine/Physick/src/force/MyForce.s
+
+# target to generate assembly for a file
+home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp.s
+.PHONY : home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp.s
+
+home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.o: home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp.o
+.PHONY : home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.o
+
+# target to build an object file
+home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp.o
+.PHONY : home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp.o
+
+home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.i: home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp.i
+.PHONY : home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.i
+
+# target to preprocess a source file
+home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp.i
+.PHONY : home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp.i
+
+home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.s: home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp.s
+.PHONY : home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.s
+
+# target to generate assembly for a file
+home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp.s
+.PHONY : home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -288,7 +262,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -296,245 +270,104 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/coordinate/coord.o: src/coordinate/coord.cpp.o
-.PHONY : src/coordinate/coord.o
+src/exception/GraphickException.o: src/exception/GraphickException.cpp.o
+.PHONY : src/exception/GraphickException.o
 
 # target to build an object file
-src/coordinate/coord.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/coordinate/coord.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/coordinate/coord.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/coordinate/coord.cpp.o
-.PHONY : src/coordinate/coord.cpp.o
+src/exception/GraphickException.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/exception/GraphickException.cpp.o
+.PHONY : src/exception/GraphickException.cpp.o
 
-src/coordinate/coord.i: src/coordinate/coord.cpp.i
-.PHONY : src/coordinate/coord.i
+src/exception/GraphickException.i: src/exception/GraphickException.cpp.i
+.PHONY : src/exception/GraphickException.i
 
 # target to preprocess a source file
-src/coordinate/coord.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/coordinate/coord.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/coordinate/coord.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/coordinate/coord.cpp.i
-.PHONY : src/coordinate/coord.cpp.i
+src/exception/GraphickException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/exception/GraphickException.cpp.i
+.PHONY : src/exception/GraphickException.cpp.i
 
-src/coordinate/coord.s: src/coordinate/coord.cpp.s
-.PHONY : src/coordinate/coord.s
+src/exception/GraphickException.s: src/exception/GraphickException.cpp.s
+.PHONY : src/exception/GraphickException.s
 
 # target to generate assembly for a file
-src/coordinate/coord.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/coordinate/coord.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/coordinate/coord.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/coordinate/coord.cpp.s
-.PHONY : src/coordinate/coord.cpp.s
+src/exception/GraphickException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/exception/GraphickException.cpp.s
+.PHONY : src/exception/GraphickException.cpp.s
 
-src/exception/PhysickException.o: src/exception/PhysickException.cpp.o
-.PHONY : src/exception/PhysickException.o
+src/object/geometry/geometry.o: src/object/geometry/geometry.cpp.o
+.PHONY : src/object/geometry/geometry.o
 
 # target to build an object file
-src/exception/PhysickException.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/exception/PhysickException.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/exception/PhysickException.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/exception/PhysickException.cpp.o
-.PHONY : src/exception/PhysickException.cpp.o
+src/object/geometry/geometry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/geometry/geometry.cpp.o
+.PHONY : src/object/geometry/geometry.cpp.o
 
-src/exception/PhysickException.i: src/exception/PhysickException.cpp.i
-.PHONY : src/exception/PhysickException.i
+src/object/geometry/geometry.i: src/object/geometry/geometry.cpp.i
+.PHONY : src/object/geometry/geometry.i
 
 # target to preprocess a source file
-src/exception/PhysickException.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/exception/PhysickException.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/exception/PhysickException.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/exception/PhysickException.cpp.i
-.PHONY : src/exception/PhysickException.cpp.i
+src/object/geometry/geometry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/geometry/geometry.cpp.i
+.PHONY : src/object/geometry/geometry.cpp.i
 
-src/exception/PhysickException.s: src/exception/PhysickException.cpp.s
-.PHONY : src/exception/PhysickException.s
+src/object/geometry/geometry.s: src/object/geometry/geometry.cpp.s
+.PHONY : src/object/geometry/geometry.s
 
 # target to generate assembly for a file
-src/exception/PhysickException.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/exception/PhysickException.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/exception/PhysickException.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/exception/PhysickException.cpp.s
-.PHONY : src/exception/PhysickException.cpp.s
+src/object/geometry/geometry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/geometry/geometry.cpp.s
+.PHONY : src/object/geometry/geometry.cpp.s
 
-src/force/Force.o: src/force/Force.cpp.o
-.PHONY : src/force/Force.o
+src/object/image/image.o: src/object/image/image.cpp.o
+.PHONY : src/object/image/image.o
 
 # target to build an object file
-src/force/Force.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/force/Force.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/force/Force.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/force/Force.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/force/Force.cpp.o
-.PHONY : src/force/Force.cpp.o
+src/object/image/image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/image/image.cpp.o
+.PHONY : src/object/image/image.cpp.o
 
-src/force/Force.i: src/force/Force.cpp.i
-.PHONY : src/force/Force.i
+src/object/image/image.i: src/object/image/image.cpp.i
+.PHONY : src/object/image/image.i
 
 # target to preprocess a source file
-src/force/Force.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/force/Force.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/force/Force.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/force/Force.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/force/Force.cpp.i
-.PHONY : src/force/Force.cpp.i
+src/object/image/image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/image/image.cpp.i
+.PHONY : src/object/image/image.cpp.i
 
-src/force/Force.s: src/force/Force.cpp.s
-.PHONY : src/force/Force.s
+src/object/image/image.s: src/object/image/image.cpp.s
+.PHONY : src/object/image/image.s
 
 # target to generate assembly for a file
-src/force/Force.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/force/Force.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/force/Force.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/force/Force.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/force/Force.cpp.s
-.PHONY : src/force/Force.cpp.s
+src/object/image/image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/image/image.cpp.s
+.PHONY : src/object/image/image.cpp.s
 
-src/force/MyForce.o: src/force/MyForce.cpp.o
-.PHONY : src/force/MyForce.o
+src/object/interface/GraphickObject.o: src/object/interface/GraphickObject.cpp.o
+.PHONY : src/object/interface/GraphickObject.o
 
 # target to build an object file
-src/force/MyForce.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/force/MyForce.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/force/MyForce.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/force/MyForce.cpp.o
-.PHONY : src/force/MyForce.cpp.o
+src/object/interface/GraphickObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.o
+.PHONY : src/object/interface/GraphickObject.cpp.o
 
-src/force/MyForce.i: src/force/MyForce.cpp.i
-.PHONY : src/force/MyForce.i
+src/object/interface/GraphickObject.i: src/object/interface/GraphickObject.cpp.i
+.PHONY : src/object/interface/GraphickObject.i
 
 # target to preprocess a source file
-src/force/MyForce.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/force/MyForce.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/force/MyForce.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/force/MyForce.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/force/MyForce.cpp.i
-.PHONY : src/force/MyForce.cpp.i
+src/object/interface/GraphickObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.i
+.PHONY : src/object/interface/GraphickObject.cpp.i
 
-src/force/MyForce.s: src/force/MyForce.cpp.s
-.PHONY : src/force/MyForce.s
+src/object/interface/GraphickObject.s: src/object/interface/GraphickObject.cpp.s
+.PHONY : src/object/interface/GraphickObject.s
 
 # target to generate assembly for a file
-src/force/MyForce.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/force/MyForce.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/force/MyForce.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/force/MyForce.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/force/MyForce.cpp.s
-.PHONY : src/force/MyForce.cpp.s
-
-src/object/PhysicalObject.o: src/object/PhysicalObject.cpp.o
-.PHONY : src/object/PhysicalObject.o
-
-# target to build an object file
-src/object/PhysicalObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/object/PhysicalObject.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/object/PhysicalObject.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/object/PhysicalObject.cpp.o
-.PHONY : src/object/PhysicalObject.cpp.o
-
-src/object/PhysicalObject.i: src/object/PhysicalObject.cpp.i
-.PHONY : src/object/PhysicalObject.i
-
-# target to preprocess a source file
-src/object/PhysicalObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/object/PhysicalObject.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/object/PhysicalObject.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/object/PhysicalObject.cpp.i
-.PHONY : src/object/PhysicalObject.cpp.i
-
-src/object/PhysicalObject.s: src/object/PhysicalObject.cpp.s
-.PHONY : src/object/PhysicalObject.s
-
-# target to generate assembly for a file
-src/object/PhysicalObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/object/PhysicalObject.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/object/PhysicalObject.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/object/PhysicalObject.cpp.s
-.PHONY : src/object/PhysicalObject.cpp.s
-
-tests/coord_test.o: tests/coord_test.cpp.o
-.PHONY : tests/coord_test.o
-
-# target to build an object file
-tests/coord_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/tests/coord_test.cpp.o
-.PHONY : tests/coord_test.cpp.o
-
-tests/coord_test.i: tests/coord_test.cpp.i
-.PHONY : tests/coord_test.i
-
-# target to preprocess a source file
-tests/coord_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/tests/coord_test.cpp.i
-.PHONY : tests/coord_test.cpp.i
-
-tests/coord_test.s: tests/coord_test.cpp.s
-.PHONY : tests/coord_test.s
-
-# target to generate assembly for a file
-tests/coord_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/tests/coord_test.cpp.s
-.PHONY : tests/coord_test.cpp.s
-
-tests/force_test.o: tests/force_test.cpp.o
-.PHONY : tests/force_test.o
-
-# target to build an object file
-tests/force_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/tests/force_test.cpp.o
-.PHONY : tests/force_test.cpp.o
-
-tests/force_test.i: tests/force_test.cpp.i
-.PHONY : tests/force_test.i
-
-# target to preprocess a source file
-tests/force_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/tests/force_test.cpp.i
-.PHONY : tests/force_test.cpp.i
-
-tests/force_test.s: tests/force_test.cpp.s
-.PHONY : tests/force_test.s
-
-# target to generate assembly for a file
-tests/force_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/tests/force_test.cpp.s
-.PHONY : tests/force_test.cpp.s
-
-tests/object_test.o: tests/object_test.cpp.o
-.PHONY : tests/object_test.o
-
-# target to build an object file
-tests/object_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/tests/object_test.cpp.o
-.PHONY : tests/object_test.cpp.o
-
-tests/object_test.i: tests/object_test.cpp.i
-.PHONY : tests/object_test.i
-
-# target to preprocess a source file
-tests/object_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/tests/object_test.cpp.i
-.PHONY : tests/object_test.cpp.i
-
-tests/object_test.s: tests/object_test.cpp.s
-.PHONY : tests/object_test.s
-
-# target to generate assembly for a file
-tests/object_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/tests/object_test.cpp.s
-.PHONY : tests/object_test.cpp.s
+src/object/interface/GraphickObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graphick.dir/build.make CMakeFiles/graphick.dir/src/object/interface/GraphickObject.cpp.s
+.PHONY : src/object/interface/GraphickObject.cpp.s
 
 # Help Target
 help:
@@ -543,47 +376,38 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... test"
-	@echo "... MyProject"
-	@echo "... coord_test"
-	@echo "... force_test"
-	@echo "... gmock"
-	@echo "... gmock_main"
-	@echo "... gtest"
-	@echo "... gtest_main"
-	@echo "... object_test"
+	@echo "... graphick"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/coordinate/coord.o"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/coordinate/coord.i"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/coordinate/coord.s"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.o"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.i"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.s"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/force/Force.o"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/force/Force.i"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/force/Force.s"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/force/MyForce.o"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/force/MyForce.i"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/force/MyForce.s"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.o"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.i"
+	@echo "... home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/coordinate/coord.o"
-	@echo "... src/coordinate/coord.i"
-	@echo "... src/coordinate/coord.s"
-	@echo "... src/exception/PhysickException.o"
-	@echo "... src/exception/PhysickException.i"
-	@echo "... src/exception/PhysickException.s"
-	@echo "... src/force/Force.o"
-	@echo "... src/force/Force.i"
-	@echo "... src/force/Force.s"
-	@echo "... src/force/MyForce.o"
-	@echo "... src/force/MyForce.i"
-	@echo "... src/force/MyForce.s"
-	@echo "... src/object/PhysicalObject.o"
-	@echo "... src/object/PhysicalObject.i"
-	@echo "... src/object/PhysicalObject.s"
-	@echo "... tests/coord_test.o"
-	@echo "... tests/coord_test.i"
-	@echo "... tests/coord_test.s"
-	@echo "... tests/force_test.o"
-	@echo "... tests/force_test.i"
-	@echo "... tests/force_test.s"
-	@echo "... tests/object_test.o"
-	@echo "... tests/object_test.i"
-	@echo "... tests/object_test.s"
+	@echo "... src/exception/GraphickException.o"
+	@echo "... src/exception/GraphickException.i"
+	@echo "... src/exception/GraphickException.s"
+	@echo "... src/object/geometry/geometry.o"
+	@echo "... src/object/geometry/geometry.i"
+	@echo "... src/object/geometry/geometry.s"
+	@echo "... src/object/image/image.o"
+	@echo "... src/object/image/image.i"
+	@echo "... src/object/image/image.s"
+	@echo "... src/object/interface/GraphickObject.o"
+	@echo "... src/object/interface/GraphickObject.i"
+	@echo "... src/object/interface/GraphickObject.s"
 .PHONY : help
 
 

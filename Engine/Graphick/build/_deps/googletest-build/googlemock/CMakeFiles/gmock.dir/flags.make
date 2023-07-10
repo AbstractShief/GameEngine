@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/debial/GameEngine/Engine/Physick/build/_deps/googletest-src/googlemock/include -I/home/debial/GameEngine/Engine/Physick/build/_deps/googletest-src/googlemock -isystem /home/debial/GameEngine/Engine/Physick/build/_deps/googletest-src/googletest/include -isystem /home/debial/GameEngine/Engine/Physick/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/debial/GameEngine/Engine/Graphick/build/_deps/googletest-src/googlemock/include -I/home/debial/GameEngine/Engine/Graphick/build/_deps/googletest-src/googlemock -isystem /home/debial/GameEngine/Engine/Graphick/build/_deps/googletest-src/googletest/include -isystem /home/debial/GameEngine/Engine/Graphick/build/_deps/googletest-src/googletest
 
 CXX_FLAGS = -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
 

@@ -4,6 +4,7 @@
 #include <list>
 #include <unordered_map>
 //мера исчесление 2д пространства это см
+class coord;
 class Point{
 #if DEBUG==1  
    public:
@@ -23,6 +24,14 @@ class Point{
    virtual bool Collision(const Point *)const;//always return false; null HitBox Object
    virtual Point* copy()const;//не глубокие копии
    virtual void resize(double xd,double yd);
+   operator coord();
+};
+struct coord{
+   double x,y;
+   coord(double x,double y);
+   operator Point(){
+      return Point(x,y);
+   }
 };
 //          W
 //      *------*
@@ -39,6 +48,7 @@ class HitBox : public Point{
    virtual bool Collision(const Point *) const override;//if point in Rect return true
    virtual Point* copy()const override;
    virtual void resize(double xd,double yd) override;
+   coord get_size()const;
 };
 //add: внутрение хит боксы должны вмещатся во внешний в ином случае будет вызванно исключение
 class CompositeHitBox : public HitBox{

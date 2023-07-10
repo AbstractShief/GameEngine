@@ -1,0 +1,3 @@
+/home/debial/GameEngine/Engine/Game/build/CMakeFiles/graphick.dir
+/home/debial/GameEngine/Engine/Game/build/CMakeFiles/edit_cache.dir
+/home/debial/GameEngine/Engine/Game/build/CMakeFiles/rebuild_cache.dir
