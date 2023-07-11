@@ -4,14 +4,14 @@
 #include "../src/object/PhysicalObject.h"
 
 TEST(PhysicalObjectTest, TestConstruct){
-   Point point(5,5);
+   HitBox point(Point(5,5),10,10);
    PhysicalObject obj(&point,5);
    EXPECT_EQ(obj.mass,5);
    EXPECT_EQ(obj.hitbox->x,point.x);
    EXPECT_EQ(obj.hitbox->x,point.y);
 }
 TEST(PhysicalObject,TestMoveTo){
-   Point point(5,5);
+   HitBox point(Point(5,5),10,10);
    PhysicalObject obj(&point,5);
    Point vector(10,5);
    obj.moveTo(&vector);
@@ -20,7 +20,7 @@ TEST(PhysicalObject,TestMoveTo){
 }
 TEST(PhysicalObject,TestAddDelForce){
    Point vector(5,5);
-   Point point(5,5);
+   HitBox point(Point(5,5),10,10);
    MovementForce force(vector);
    MovementForce force2(vector);
    PhysicalObject obj(&point,5);
@@ -36,7 +36,7 @@ TEST(PhysicalObject,TestAddDelForce){
 }
 TEST(PhysicalObject,TestClear){
    Point vector(5,5);
-   Point point(5,5);
+   HitBox point(Point(5,5),10,10);
    MovementForce force(vector);
    MovementForce force2(vector);
    PhysicalObject obj(&point,5);
@@ -47,7 +47,7 @@ TEST(PhysicalObject,TestClear){
 }
 TEST(PhysicalObject,TestSetZero){
    Point vector(5,5);
-   Point point(5,5);
+   HitBox point(Point(5,5),10,10);
    MovementForce force(vector);
    MovementForce force2(vector);
    PhysicalObject obj(&point,5);
@@ -60,7 +60,7 @@ TEST(PhysicalObject,TestSetZero){
 
 TEST(PhysicalObjectTest,TestGetVector){
    Point vector(5,5);
-   Point point(5,5);
+   HitBox point(Point(5,5),10,10);
    MovementForce force(vector);
    MovementForce force2(vector);
    PhysicalObject obj(&point,5);
@@ -76,7 +76,7 @@ TEST(PhysicalObjectTest,TestGetVector){
 }
 TEST(PhysicalObjectTest,TestUpdate){
    Point vector(5,5);
-   Point point(5,5);
+   HitBox point(Point(5,5),10,10);
    MovementForce force(vector);
    MovementForce force2(vector);
    PhysicalObject obj(&point,5);

@@ -30,7 +30,7 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 
-file(GLOB_RECURSE VARIABLE src/coordinate/*.cpp src/exception/*.cpp src/force/*.cpp src/object/*.cpp ../General/*.cpp)
+file(GLOB_RECURSE VARIABLE src/*.cpp ../General/error/*.cpp ../General/object/*.cpp)
 #compilation
 set(ARGS -Wall -g -lm -DDEBUG=1)
 add_executable(MyProject main.cpp ${VARIABLE})

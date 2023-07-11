@@ -7,6 +7,7 @@ class PhysicalObject{
 #ifdef DEBUG
    public:
 #endif
+   bool was_move;
    bool physick;
    double mass;
    HitBox *hitbox;
@@ -20,6 +21,8 @@ class PhysicalObject{
    void clear();
    void update(time_t time);
    void moveTo(Point *coord);
+   void wasmove_off();
+   bool wasmove_get();
    void add_force(int id,MovementForce *force);
    void del_force(int id);
    operator const HitBox*();

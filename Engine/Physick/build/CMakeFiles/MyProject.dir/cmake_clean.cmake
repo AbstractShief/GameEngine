@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "../bin/MyProject"
   "../bin/MyProject.pdb"
+  "CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o"
+  "CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o.d"
   "CMakeFiles/MyProject.dir/main.cpp.o"
   "CMakeFiles/MyProject.dir/main.cpp.o.d"
   "CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o"
@@ -13,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o.d"
   "CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o"
   "CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o.d"
+  "CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.o"
+  "CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

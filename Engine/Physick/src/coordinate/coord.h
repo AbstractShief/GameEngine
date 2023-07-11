@@ -15,8 +15,10 @@ class Point{
    public:
    Point(double x,double y);
    void get_pos(double *x,double *y) const;
+   coord get_pos()const;
    double get_x()const;
    double get_y()const;
+
    void set(double x,double y);
    void set(const Point *coord);
    void move(double x,double y);

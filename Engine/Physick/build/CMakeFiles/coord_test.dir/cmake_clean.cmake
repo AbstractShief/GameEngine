@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "../bin/coord_test"
   "../bin/coord_test.pdb"
+  "CMakeFiles/coord_test.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o"
+  "CMakeFiles/coord_test.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o.d"
   "CMakeFiles/coord_test.dir/src/coordinate/coord.cpp.o"
   "CMakeFiles/coord_test.dir/src/coordinate/coord.cpp.o.d"
   "CMakeFiles/coord_test.dir/src/exception/PhysickException.cpp.o"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/coord_test.dir/src/force/MyForce.cpp.o.d"
   "CMakeFiles/coord_test.dir/src/object/PhysicalObject.cpp.o"
   "CMakeFiles/coord_test.dir/src/object/PhysicalObject.cpp.o.d"
+  "CMakeFiles/coord_test.dir/src/storage/ObjectStorage.cpp.o"
+  "CMakeFiles/coord_test.dir/src/storage/ObjectStorage.cpp.o.d"
   "CMakeFiles/coord_test.dir/tests/coord_test.cpp.o"
   "CMakeFiles/coord_test.dir/tests/coord_test.cpp.o.d"
   "coord_test[1]_tests.cmake"

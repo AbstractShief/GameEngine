@@ -8,6 +8,9 @@ void Point::get_pos(double *x_,double *y_) const{
    *x_=x;
    *y_=y;
 }
+coord Point::get_pos()const{
+   return coord(x,y);
+}
 Point::operator coord(){
    return coord(x,y);
 }

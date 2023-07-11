@@ -275,6 +275,39 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+home/debial/GameEngine/Engine/General/object/object.o: home/debial/GameEngine/Engine/General/object/object.cpp.o
+.PHONY : home/debial/GameEngine/Engine/General/object/object.o
+
+# target to build an object file
+home/debial/GameEngine/Engine/General/object/object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o
+.PHONY : home/debial/GameEngine/Engine/General/object/object.cpp.o
+
+home/debial/GameEngine/Engine/General/object/object.i: home/debial/GameEngine/Engine/General/object/object.cpp.i
+.PHONY : home/debial/GameEngine/Engine/General/object/object.i
+
+# target to preprocess a source file
+home/debial/GameEngine/Engine/General/object/object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/home/debial/GameEngine/Engine/General/object/object.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/home/debial/GameEngine/Engine/General/object/object.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/home/debial/GameEngine/Engine/General/object/object.cpp.i
+.PHONY : home/debial/GameEngine/Engine/General/object/object.cpp.i
+
+home/debial/GameEngine/Engine/General/object/object.s: home/debial/GameEngine/Engine/General/object/object.cpp.s
+.PHONY : home/debial/GameEngine/Engine/General/object/object.s
+
+# target to generate assembly for a file
+home/debial/GameEngine/Engine/General/object/object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/home/debial/GameEngine/Engine/General/object/object.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/home/debial/GameEngine/Engine/General/object/object.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/home/debial/GameEngine/Engine/General/object/object.cpp.s
+.PHONY : home/debial/GameEngine/Engine/General/object/object.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -464,6 +497,39 @@ src/object/PhysicalObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/object/PhysicalObject.cpp.s
 .PHONY : src/object/PhysicalObject.cpp.s
 
+src/storage/ObjectStorage.o: src/storage/ObjectStorage.cpp.o
+.PHONY : src/storage/ObjectStorage.o
+
+# target to build an object file
+src/storage/ObjectStorage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/storage/ObjectStorage.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/storage/ObjectStorage.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/storage/ObjectStorage.cpp.o
+.PHONY : src/storage/ObjectStorage.cpp.o
+
+src/storage/ObjectStorage.i: src/storage/ObjectStorage.cpp.i
+.PHONY : src/storage/ObjectStorage.i
+
+# target to preprocess a source file
+src/storage/ObjectStorage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/storage/ObjectStorage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/storage/ObjectStorage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/storage/ObjectStorage.cpp.i
+.PHONY : src/storage/ObjectStorage.cpp.i
+
+src/storage/ObjectStorage.s: src/storage/ObjectStorage.cpp.s
+.PHONY : src/storage/ObjectStorage.s
+
+# target to generate assembly for a file
+src/storage/ObjectStorage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/coord_test.dir/build.make CMakeFiles/coord_test.dir/src/storage/ObjectStorage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/force_test.dir/build.make CMakeFiles/force_test.dir/src/storage/ObjectStorage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/object_test.dir/build.make CMakeFiles/object_test.dir/src/storage/ObjectStorage.cpp.s
+.PHONY : src/storage/ObjectStorage.cpp.s
+
 tests/coord_test.o: tests/coord_test.cpp.o
 .PHONY : tests/coord_test.o
 
@@ -557,6 +623,9 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... object_test"
+	@echo "... home/debial/GameEngine/Engine/General/object/object.o"
+	@echo "... home/debial/GameEngine/Engine/General/object/object.i"
+	@echo "... home/debial/GameEngine/Engine/General/object/object.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -575,6 +644,9 @@ help:
 	@echo "... src/object/PhysicalObject.o"
 	@echo "... src/object/PhysicalObject.i"
 	@echo "... src/object/PhysicalObject.s"
+	@echo "... src/storage/ObjectStorage.o"
+	@echo "... src/storage/ObjectStorage.i"
+	@echo "... src/storage/ObjectStorage.s"
 	@echo "... tests/coord_test.o"
 	@echo "... tests/coord_test.i"
 	@echo "... tests/coord_test.s"

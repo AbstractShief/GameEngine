@@ -83,10 +83,24 @@ CMakeFiles/MyProject.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/debial/GameEngine/Engine/Physick/main.cpp -o CMakeFiles/MyProject.dir/main.cpp.s
 
+CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o: /home/debial/GameEngine/Engine/General/object/object.cpp
+CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o -MF CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o.d -o CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o -c /home/debial/GameEngine/Engine/General/object/object.cpp
+
+CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/debial/GameEngine/Engine/General/object/object.cpp > CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.i
+
+CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/debial/GameEngine/Engine/General/object/object.cpp -o CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.s
+
 CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o: ../src/coordinate/coord.cpp
 CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o -MF CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o.d -o CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o -c /home/debial/GameEngine/Engine/Physick/src/coordinate/coord.cpp
 
 CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o: ../src/exception/PhysickException.cpp
 CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o -MF CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o.d -o CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o -c /home/debial/GameEngine/Engine/Physick/src/exception/PhysickException.cpp
 
 CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/force/Force.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/force/Force.cpp.o: ../src/force/Force.cpp
 CMakeFiles/MyProject.dir/src/force/Force.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyProject.dir/src/force/Force.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyProject.dir/src/force/Force.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/force/Force.cpp.o -MF CMakeFiles/MyProject.dir/src/force/Force.cpp.o.d -o CMakeFiles/MyProject.dir/src/force/Force.cpp.o -c /home/debial/GameEngine/Engine/Physick/src/force/Force.cpp
 
 CMakeFiles/MyProject.dir/src/force/Force.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/MyProject.dir/src/force/Force.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o: ../src/force/MyForce.cpp
 CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o -MF CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o.d -o CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o -c /home/debial/GameEngine/Engine/Physick/src/force/MyForce.cpp
 
 CMakeFiles/MyProject.dir/src/force/MyForce.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/MyProject.dir/src/force/MyForce.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o: ../src/object/PhysicalObject.cpp
 CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o -MF CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o.d -o CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o -c /home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp
 
 CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.i: cmake_force
@@ -153,27 +167,45 @@ CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/debial/GameEngine/Engine/Physick/src/object/PhysicalObject.cpp -o CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.s
 
+CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.o: ../src/storage/ObjectStorage.cpp
+CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.o -MF CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.o.d -o CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.o -c /home/debial/GameEngine/Engine/Physick/src/storage/ObjectStorage.cpp
+
+CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/debial/GameEngine/Engine/Physick/src/storage/ObjectStorage.cpp > CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.i
+
+CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/debial/GameEngine/Engine/Physick/src/storage/ObjectStorage.cpp -o CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.s
+
 # Object files for target MyProject
 MyProject_OBJECTS = \
 "CMakeFiles/MyProject.dir/main.cpp.o" \
+"CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o" \
 "CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o" \
 "CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o" \
 "CMakeFiles/MyProject.dir/src/force/Force.cpp.o" \
 "CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o" \
-"CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o"
+"CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o" \
+"CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.o"
 
 # External object files for target MyProject
 MyProject_EXTERNAL_OBJECTS =
 
 ../bin/MyProject: CMakeFiles/MyProject.dir/main.cpp.o
+../bin/MyProject: CMakeFiles/MyProject.dir/home/debial/GameEngine/Engine/General/object/object.cpp.o
 ../bin/MyProject: CMakeFiles/MyProject.dir/src/coordinate/coord.cpp.o
 ../bin/MyProject: CMakeFiles/MyProject.dir/src/exception/PhysickException.cpp.o
 ../bin/MyProject: CMakeFiles/MyProject.dir/src/force/Force.cpp.o
 ../bin/MyProject: CMakeFiles/MyProject.dir/src/force/MyForce.cpp.o
 ../bin/MyProject: CMakeFiles/MyProject.dir/src/object/PhysicalObject.cpp.o
+../bin/MyProject: CMakeFiles/MyProject.dir/src/storage/ObjectStorage.cpp.o
 ../bin/MyProject: CMakeFiles/MyProject.dir/build.make
 ../bin/MyProject: CMakeFiles/MyProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ../bin/MyProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/debial/GameEngine/Engine/Physick/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../bin/MyProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

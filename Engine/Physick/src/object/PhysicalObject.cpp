@@ -13,6 +13,12 @@ Point ObjectColissionSpeed(double m1,double m2,double v1,double v2){
    y=(c+minus*sqrt(c*c-2*d*(a*a-b*m1)))/d;
    return (Point){(a-y*m2)/m1,y};
 }
+void PhysicalObject::wasmove_off(){
+   was_move=false;
+}
+bool PhysicalObject::wasmove_get(){
+   return was_move;
+}
 void PhysicalObject::SetZero(){
    for(auto it=forces.begin();it!=forces.end();it++)
       it->second->set_zero();
@@ -59,12 +65,14 @@ void PhysicalObject::update(time_t time){
          Point a=force->GetWay(time);
          hitbox->move(&a);
          force->update(time);
+         was_move=true;
       }else forces.erase(it);
    }
 
 }
 void PhysicalObject::moveTo(Point *coord){
    hitbox->set(coord);
+   was_move=true;
 }
 void PhysicalObject::add_force(int id,MovementForce *force){//0 это зарезервированное число
    if(id==0) throw std::out_of_range("0 это зарезервированное число");
