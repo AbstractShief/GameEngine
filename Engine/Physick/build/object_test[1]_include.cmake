@@ -1,5 +1,0 @@
-if(EXISTS "/home/debial/GameEngine/Engine/Physick/build/object_test[1]_tests.cmake")
-  include("/home/debial/GameEngine/Engine/Physick/build/object_test[1]_tests.cmake")
-else()
-  add_test(object_test_NOT_BUILT object_test_NOT_BUILT)
-endif()

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/coord_test.dir/tests/coord_test.cpp.o CMakeFiles/coord_test.dir/structure/coord/coord.cpp.o -o ../bin/coord_test  lib/libgtest_main.a lib/libgtest.a 
